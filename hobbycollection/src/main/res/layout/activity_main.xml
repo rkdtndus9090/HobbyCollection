@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 툴바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:text="오늘의 취미활동은?"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="140dp"
+        android:text="날마다 새로운 취미!"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    <Button
+        android:id="@+id/cooking"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/img_main1"
+        android:text="요리"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    <Button
+        android:id="@+id/art"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/img_main2"
+        android:text="미술"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    <Button
+        android:id="@+id/crafts"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/img_main3"
+        android:text="공예"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/icon_room1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    <Button
+        android:id="@+id/review"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/icon_review1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
