@@ -47,13 +47,13 @@
         android:id="@+id/cooking"
         android:layout_width="350dp"
         android:layout_height="100dp"
-        android:layout_marginTop="200dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/img_main1"
         android:text="요리"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
 
         app:layout_constraintStart_toStartOf="@+id/app_toolbar"
         app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
@@ -62,13 +62,13 @@
         android:id="@+id/art"
         android:layout_width="350dp"
         android:layout_height="100dp"
-        android:layout_marginTop="310dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="310dp"
         android:background="@drawable/img_main2"
         android:text="미술"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
 
         app:layout_constraintStart_toStartOf="@+id/app_toolbar"
         app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
@@ -77,13 +77,13 @@
         android:id="@+id/crafts"
         android:layout_width="350dp"
         android:layout_height="100dp"
-        android:layout_marginTop="420dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="420dp"
         android:background="@drawable/img_main3"
         android:text="공예"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
 
         app:layout_constraintStart_toStartOf="@+id/app_toolbar"
         app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
@@ -92,12 +92,12 @@
         android:id="@+id/user"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="600dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="600dp"
         android:background="@drawable/icon_room1"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
 
         app:layout_constraintStart_toStartOf="@+id/app_toolbar"
         app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
@@ -106,16 +106,15 @@
         android:id="@+id/review"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="600dp"
         android:layout_marginLeft="70dp"
+        android:layout_marginTop="600dp"
         android:background="@drawable/icon_review1"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
 
         app:layout_constraintStart_toStartOf="@+id/app_toolbar"
         app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

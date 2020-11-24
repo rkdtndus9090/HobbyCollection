@@ -1,25 +1,21 @@
 package com.example.hobbycollection;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
-import android.view.MenuItem;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class SingUp extends AppCompatActivity {
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+
+public class CraftsListActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sing_up);
+        setContentView(R.layout.activity_crafts_list2);
 
         //Toolbar를 액티비티의 App Bar로 지정
         setSupportActionBar((Toolbar) findViewById(R.id.app_toolbar));
-        //Toolbar td = (Toolbar) findViewById(R.id.app_toolbar));
-        //setSupportActionBar(tb);
 
         //툴바 타이틀 지우기
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -34,15 +30,4 @@ public class SingUp extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
 
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case android.R.id.home:{
-                startActivity(new Intent(this, Login.class));
-            }
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
 }

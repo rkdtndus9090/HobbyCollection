@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtListActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 툴바 -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="314dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/img_art4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="원데이"
+            android:textColor="#000000"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나만의 수채화 그림 그리기"
+            android:textColor="#000000"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="336dp"
+            android:layout_marginTop="436dp"
+            android:text="52,000원"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="504dp"
+            android:text="클래스 정보"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <ImageView
+            android:src="@drawable/location"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="555dp"
+            android:text="금천구 가산동"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <ImageView
+            android:src="@drawable/time"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="590dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="590dp"
+            android:text="총 4시간"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="640dp"
+            android:text="클래스 일정"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="680dp"
+            android:text="10월 30일 금 : 13:00 - 17:00"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="710dp"
+            android:text="10월 31일 토 : 13:00 - 17:00"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="740dp"
+            android:text="12월 1일 일 : 13:00 - 17:00"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="790dp"
+            android:text="신청하기"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="850dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/app_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/app_toolbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

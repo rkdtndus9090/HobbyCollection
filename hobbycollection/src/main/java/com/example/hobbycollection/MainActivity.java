@@ -1,17 +1,32 @@
 package com.example.hobbycollection;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         cooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent1 = new Intent(MainActivity.this,Cooking.class);
+                Intent myintent1 = new Intent(MainActivity.this,CookingActivity.class);
                 startActivity(myintent1);
                 finish();
             }
@@ -52,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         art.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent1 = new Intent(MainActivity.this,Art.class);
+                Intent myintent1 = new Intent(MainActivity.this, ArtActivity.class);
                 startActivity(myintent1);
                 finish();
             }
@@ -63,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         crafts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent1 = new Intent(MainActivity.this,Crafts.class);
+                Intent myintent1 = new Intent(MainActivity.this,CraftsActivity.class);
                 startActivity(myintent1);
                 finish();
             }
@@ -74,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent1 = new Intent(MainActivity.this,Room.class);
+                Intent myintent1 = new Intent(MainActivity.this,RoomActivity.class);
                 startActivity(myintent1);
                 finish();
             }
@@ -85,24 +100,11 @@ public class MainActivity extends AppCompatActivity {
         review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent1 = new Intent(MainActivity.this,Review.class);
+                Intent myintent1 = new Intent(MainActivity.this, ReviewActivity.class);
                 startActivity(myintent1);
+
                 finish();
             }
         });
-
-
-
-    }
-
-    // 옵션 메뉴 구현
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case android.R.id.home:{
-                startActivity(new Intent(this, Login.class));
-            }
-        }
-        return super.onOptionsItemSelected(item);
     }
 }

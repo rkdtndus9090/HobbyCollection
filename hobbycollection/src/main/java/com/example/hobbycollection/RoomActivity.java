@@ -5,19 +5,16 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Login extends AppCompatActivity {
+public class RoomActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_room);
 
         //Toolbar를 액티비티의 App Bar로 지정
         setSupportActionBar((Toolbar) findViewById(R.id.app_toolbar));
@@ -35,44 +32,15 @@ public class Login extends AppCompatActivity {
 
         //툴바 배경색
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000000")));
-
-
-
-        //회원 가입 버튼을 눌렀을 시
-        Button singup = (Button)findViewById(R.id.singup);
-        singup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "환영합니다:)", Toast.LENGTH_LONG).show();
-                Intent myintent = new Intent(Login.this,SingUp.class);
-                startActivity(myintent);
-                finish();
-            }
-        });
-
-        //로그인 버튼을 눌렀을 시
-        Button login = (Button)findViewById(R.id.login);
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myintent = new Intent(Login.this,MainActivity.class);
-                startActivity(myintent);
-                finish();
-            }
-        });
-
     }
 
-    // 옵션 메뉴 구현
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case android.R.id.home:{
-                finish();
-                return true;
+                startActivity(new Intent(this, MainActivity.class));
             }
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

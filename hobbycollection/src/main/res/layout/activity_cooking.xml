@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cooking">
+    tools:context=".CookingActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/app_toolbar"
@@ -15,7 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/textView6"
@@ -59,7 +58,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/cook1"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
@@ -109,7 +109,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/cook2"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
@@ -159,7 +160,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/cook3"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
@@ -209,7 +211,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/cook4"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"

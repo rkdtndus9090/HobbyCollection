@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Art">
+    tools:context=".ArtActivity">
 
     <!-- 툴바 -->
     <androidx.appcompat.widget.Toolbar
@@ -61,7 +61,8 @@
         app:layout_constraintStart_toStartOf="@+id/app_toolbar"
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/art1"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
@@ -109,7 +110,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/art2"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
@@ -159,7 +161,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/art3"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
@@ -209,7 +212,8 @@
         app:layout_constraintTop_toTopOf="@+id/app_toolbar">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/art4"
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:scaleType="centerInside"
